@@ -1,4 +1,3 @@
-// app/api/cron/route.ts
 import { db } from "@/configs/db";
 import { usersTable, WireframeToCodeTable } from "@/configs/schema";
 import { NextResponse } from "next/server";
@@ -49,8 +48,7 @@ export async function GET(request: Request) {
     return NextResponse.json(
       { 
         error: "Operation failed",
-        // Only include details in development
-        details: process.env.NODE_ENV === 'development' ? errorMessage : undefined
+        message: errorMessage
       },
       { status: 500 }
     );
