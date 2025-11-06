@@ -52,7 +52,7 @@ export default {
         {
             name: 'Deepkseek',
             icon: '/deepseek.png',
-            modelName: 'qwen/qwen-turbo'
+            modelName: 'mistralai/mistral-small-3.2-24b-instruct:free'
         }
     ],
     DEPENDANCY: {

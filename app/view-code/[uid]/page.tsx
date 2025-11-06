@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import SelectionDetail from '../_components/SelectionDetail'
 import CodeEditor from '../_components/CodeEditor'
-import { read } from 'fs'
+import { read } from 'fs';
 
 export interface RECORD {
     id: number,
