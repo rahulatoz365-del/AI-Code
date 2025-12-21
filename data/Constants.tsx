@@ -34,7 +34,10 @@ export default {
 - Make sure to keep same color combination across the page
 - Add Some Colors to make it more modern UI UX
 - Use lucid library for icons
-- Do not use any third party library
+- Do not add or rely on any NEW third‑party libraries. Only use React + Tailwind CSS.
+- The ONLY allowed third‑party packages (if needed) are the ones already installed in this project:
+  lucide-react, react-router-dom, firebase, @google/generative-ai, date-fns, chart.js, react-chartjs-2, uuid4, tailwind-merge, tailwindcss-animate.
+- Do NOT use any other UI/component/icon libraries (no MUI/Chakra/Ant/shadcn/radix/headlessui/bootstrap, no FontAwesome/Heroicons/Material Icons).
 - Only give react+ tailwindcss code and do not write any text other than code
 `,
 
@@ -47,19 +50,19 @@ export default {
         {
             name: 'llama By Meta',
             icon: '/meta.png',
-            modelName: 'google/gemini-2.0-flash-001'
+            modelName: 'qwen/qwen-2.5-vl-7b-instruct:free'
         },
         {
             name: 'Deepkseek',
             icon: '/deepseek.png',
-            modelName: 'mistralai/mistral-small-3.2-24b-instruct:free'
+            modelName: 'nvidia/nemotron-nano-12b-v2-vl:free'
         }
     ],
     DEPENDANCY: {
 
         "postcss": "^8",
         "tailwindcss": "^3.4.1",
-        autoprefixer: "^10.0.0",
+        "autoprefixer": "^10.0.0",
         "uuid4": "^2.0.3",
         "tailwind-merge": "^2.4.0",
         "tailwindcss-animate": "^1.0.7",
