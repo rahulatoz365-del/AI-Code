@@ -38,7 +38,7 @@ export default {
 - Make sure to use React functional components and hooks where necessary
 - Ensure the code is clean, well-structured, and follows best practices
 - Do NOT use TypeScript, only use JavaScript for React components
-- Do NOT use Framer Motion or any animation libraries and also DO NOT use react icons library other than lucid-react
+- Do NOT use framer-motion or any animation libraries and also DO NOT use react-icons library other than lucid-react
 - Do not add or rely on any NEW third‑party libraries. Only use React + Tailwind CSS.
 - The ONLY allowed third‑party packages (if needed) are the ones already installed in this project:
   lucide-react, react-router-dom, firebase, @google/generative-ai, date-fns, chart.js, react-chartjs-2, uuid4, tailwind-merge, tailwindcss-animate.
