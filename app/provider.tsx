@@ -17,7 +17,7 @@ function Provider({
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setUser(user);
+            setUser(user);  
         });
 
         return () => unsubscribe(); // Cleanup

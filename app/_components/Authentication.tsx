@@ -4,6 +4,7 @@ import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useAuthContext } from '../provider';
+import { max } from 'drizzle-orm';
 
 function Authentication({ children, redirectOnSuccess }: { children: any, redirectOnSuccess?: string }) {
     const provider = new GoogleAuthProvider();
@@ -25,6 +26,7 @@ function Authentication({ children, redirectOnSuccess }: { children: any, redire
                 const user = result.user;
                 console.log("User:", user, "Token:", token);
 
+                document.cookie = 'isLoggedIn=true; path=/; max-age=604800'; //7 days
                 if (redirectOnSuccess) {
                     router.push(redirectOnSuccess);
                 }

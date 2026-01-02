@@ -18,6 +18,7 @@ function ProfileAvatar() {
     const router = useRouter();
 
     const handleLogout = () => {
+        document.cookie = "isLoggedIn=false; path=/; max-age=0";
         signOut(auth)
             .then(() => {
                 // Redirect to home page after successful sign-out
